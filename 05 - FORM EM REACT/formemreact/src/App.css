@@ -36,19 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.red-title {
-  background-color: black;
-  color: red;
-  padding: 15px;
-  border: 5px solid red;
-}
-
-.title {
-  background-color: black;
-  color: white;
-}
-
-.App {
-  background-color: aqua;
-}

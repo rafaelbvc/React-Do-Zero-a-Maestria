@@ -6,9 +6,15 @@ import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
 import { useState } from "react";
 import CarDetails from "./components/CarDetails";
+import Fragment from "./components/Fragment";
+import Container from "./components/Container";
+import ExecutarFunction from "./components/ExecutarFunction";
+import Message from "./components/Message";
+import ChangeMessageState from "./components/ChangeMessageState";
+import Challenge from "./components/Challenge";
 
 function App() {
-  const name = "Rafael";
+  //const name = "Rafael";
   const [userName] = useState("Rafael");
 
   const cars = [
@@ -16,6 +22,16 @@ function App() {
     { id: 1, brand: "VW", color: "Azul", newCar: true, km: 0 },
     { id: 1, brand: "VW", color: "Azul", newCar: false, km: 165 },
   ];
+
+  const showMessage = () => {
+    console.log("Evento do component");
+  };
+
+  const [message, setMessage] = useState("");
+
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  };
 
   return (
     <div className="App">
@@ -42,6 +58,17 @@ function App() {
           newCar={car.newCar}
         />
       ))}
+      <Fragment propFragment="Prop fragment" />
+      <Container myValue="Prop com Children">
+        <p>Este é o conteúdo!</p>
+      </Container>
+      <Container myValue="Prop com Children 2">
+        <p>Este é o conteúdo 2!</p>
+      </Container>
+      <ExecutarFunction myFunction={showMessage} />
+      <Message msg={message} />
+      <ChangeMessageState handleMessage={handleMessage} />
+      <Challenge />
     </div>
   );
 }

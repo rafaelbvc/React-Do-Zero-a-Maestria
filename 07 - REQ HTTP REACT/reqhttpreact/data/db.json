@@ -24,6 +24,16 @@
       "name": "Boné",
       "price": "21.70",
       "id": "UrZ_cqEsUzU"
+    },
+    {
+      "name": "Mouse",
+      "price": "60.00",
+      "id": "p6Guqq7VFcs"
+    },
+    {
+      "name": "Travesseiro",
+      "price": "80.56",
+      "id": "Z6mzIOPFhHY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

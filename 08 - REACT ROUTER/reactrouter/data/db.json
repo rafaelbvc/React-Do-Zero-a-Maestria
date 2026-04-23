@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "name": "Shots",
+      "price": "40.12",
+      "id": "5-CkU8zvEOQ"
+    },
+    {
+      "name": "Boné",
+      "price": "21.70",
+      "id": "UrZ_cqEsUzU"
+    },
+    {
+      "name": "Mouse",
+      "price": "60.00",
+      "id": "p6Guqq7VFcs"
+    },
+    {
+      "name": "Travesseiro",
+      "price": "80.56",
+      "id": "Z6mzIOPFhHY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
